@@ -1,0 +1,49 @@
+/* Script for ld -r: link without relocation */
+/* Link script for PlayStation 2 IRXs
+ * Written by Douglas C. Knight <fsdck@uaf.edu>
+ */
+OUTPUT_FORMAT("elf32-littlemips")
+ENTRY(_start)
+SECTIONS
+{
+  .text : {
+    CREATE_OBJECT_SYMBOLS
+    * ( .text )
+    * ( .text.* )
+    * ( .init )
+    * ( .fini )
+  } = 0
+  .rodata : {
+    * ( .rdata )
+    * ( .rodata )
+    * ( .rodata1 )
+    * ( .rodata.* )
+  } = 0
+  .data : {
+    * ( .data )
+    * ( .data1 )
+    * ( .data.* )
+  }
+  .sdata : {
+    * ( .lit8 )
+    * ( .lit4 )
+    * ( .sdata )
+    * ( .sdata.* )
+  }
+  .sbss : {
+    * ( .sbss )
+    * ( .scommon )
+  }
+  .bss : {
+    * ( .bss )
+    * ( COMMON )
+  }
+  /* This is the stuff that we don't want to be put in an IRX.  */
+  /DISCARD/ : {
+	* ( .reginfo )
+	* ( .mdebug.* )
+	/* Until I can figure out if there's a better way to rid ourselves of .rel.dyn
+	   this will have to do.  - MRB  */
+	* ( .rel.dyn )
+  }
+}
