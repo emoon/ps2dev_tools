@@ -341,10 +341,10 @@ SEND-PR: support             I need help with gcc.
 `[ -n "$ARCH" ] && echo Architecture: $ARCH`
 `[ -n "$MACHINE" ] && echo Machine: $MACHINE`
 	$ENVIRONMENT_C
-host: i686-apple-darwin10.4.0
-build: i686-apple-darwin10.4.0
+host: i686-apple-darwin11.0.0
+build: i686-apple-darwin11.0.0
 target: mips64r5900el-scei-elf
-configured with: ../configure --prefix=/Users/jesper/ps2dev/ee --target=ee --enable-languages=c --with-newlib --with-headers=/Users/jesper/ps2dev/ee/ee/include --enable-cxx-flags=-G0
+configured with: ../configure --prefix=/usr/local/ps2dev/ee --target=ee --enable-languages=c --with-newlib --with-headers=/usr/local/ps2dev/ee/ee/include --enable-cxx-flags=-G0
 >Description:
 	$DESCRIPTION_C
 >How-To-Repeat:

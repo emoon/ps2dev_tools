@@ -3,7 +3,7 @@ OUTPUT_FORMAT("elf32-littlemips", "elf32-bigmips",
 	      "elf32-littlemips")
 OUTPUT_ARCH(mips)
 ENTRY(_start)
-SEARCH_DIR("/Users/jesper/ps2dev/iop/iop/lib");
+SEARCH_DIR("/usr/local/ps2dev/iop/iop/lib");
 /* Do we need any of these for elf?
    __DYNAMIC = 0;    */
 SECTIONS

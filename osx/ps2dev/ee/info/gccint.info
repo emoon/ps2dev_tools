@@ -1,0 +1,224 @@
+This is doc/gccint.info, produced by makeinfo version 4.8 from
+doc/gccint.texi.
+
+INFO-DIR-SECTION Programming
+START-INFO-DIR-ENTRY
+* gccint: (gccint).            Internals of the GNU Compiler Collection.
+END-INFO-DIR-ENTRY
+   This file documents the internals of the GNU compilers.
+
+   Published by the Free Software Foundation
+59 Temple Place - Suite 330
+Boston, MA 02111-1307 USA
+
+   Copyright (C) 1988, 1989, 1992, 1993, 1994, 1995, 1996, 1997, 1998,
+1999, 2000, 2001, 2002 Free Software Foundation, Inc.
+
+   Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.1 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "GNU General Public License" and "Funding Free
+Software", the Front-Cover texts being (a) (see below), and with the
+Back-Cover Texts being (b) (see below).  A copy of the license is
+included in the section entitled "GNU Free Documentation License".
+
+   (a) The FSF's Front-Cover Text is:
+
+   A GNU Manual
+
+   (b) The FSF's Back-Cover Text is:
+
+   You have freedom to copy and modify this GNU Manual, like GNU
+software.  Copies published by the Free Software Foundation raise
+funds for GNU development.
+
+
+Indirect:
+gccint.info-1: 1250
+gccint.info-2: 298336
+gccint.info-3: 595117
+gccint.info-4: 889669
+
+Tag Table:
+(Indirect)
+Node: Top1250
+Node: Contributing3724
+Node: Portability4471
+Node: Interface6233
+Node: Languages10479
+Node: Source Tree12033
+Node: Configure Terms12652
+Node: Top Level15619
+Node: gcc Directory17747
+Node: Subdirectories18718
+Node: Configuration21029
+Node: Config Fragments21688
+Node: System Config22793
+Node: Configuration Files23096
+Node: Build25784
+Node: Makefile26196
+Node: Library Files29599
+Node: Headers30161
+Node: Documentation32207
+Node: Texinfo Manuals33008
+Node: Man Page Generation35142
+Node: Miscellaneous Docs37063
+Node: Front End38420
+Node: Front End Directory41718
+Node: Front End Config46242
+Node: Back End48609
+Node: Test Suites51631
+Node: Test Idioms52136
+Node: C Tests55013
+Node: libgcj Tests57768
+Node: Passes58689
+Node: Trees82292
+Node: Deficiencies85022
+Node: Tree overview85259
+Node: Macros and Functions89408
+Node: Identifiers89554
+Node: Containers91083
+Node: Types92239
+Node: Scopes104972
+Node: Namespaces105736
+Node: Classes108553
+Node: Declarations113164
+Node: Functions119227
+Node: Function Basics121765
+Node: Function Bodies128524
+Node: Attributes142442
+Node: Expression trees143685
+Node: RTL168081
+Node: RTL Objects170116
+Node: RTL Classes174012
+Node: Accessors178578
+Node: Flags180966
+Node: Machine Modes195876
+Node: Constants204614
+Node: Regs and Memory210585
+Node: Arithmetic223461
+Node: Comparisons230125
+Node: Bit-Fields234253
+Node: Vector Operations235681
+Node: Conversions237466
+Node: RTL Declarations240783
+Node: Side Effects241602
+Node: Incdec257402
+Node: Assembler260965
+Node: Insns262497
+Node: Calls287302
+Node: Sharing289906
+Node: Reading RTL293016
+Node: Machine Desc294009
+Node: Overview296289
+Node: Patterns298336
+Node: Example301774
+Node: RTL Template303213
+Node: Output Template315686
+Node: Output Statement319676
+Node: Constraints323655
+Node: Simple Constraints324594
+Node: Multi-Alternative336962
+Node: Class Preferences339809
+Node: Modifiers340701
+Node: Machine Constraints344371
+Node: Standard Names360977
+Ref: prologue instruction pattern400367
+Ref: epilogue instruction pattern400860
+Node: Pattern Ordering403589
+Node: Dependent Patterns404823
+Node: Jump Patterns407643
+Node: Looping Patterns413400
+Node: Insn Canonicalizations418013
+Node: Expander Definitions421521
+Node: Insn Splitting429663
+Node: Including Patterns439268
+Node: Peephole Definitions441064
+Node: define_peephole442321
+Node: define_peephole2448681
+Node: Insn Attributes451756
+Node: Defining Attributes452849
+Node: Expressions454875
+Node: Tagging Insns461477
+Node: Attr Example465843
+Node: Insn Lengths468223
+Node: Constant Attributes471497
+Node: Delay Slots472666
+Node: Function Units475886
+Node: Conditional Execution481570
+Node: Constant Definitions484431
+Node: Target Macros486014
+Node: Target Structure488706
+Node: Driver489975
+Node: Run-time Target509295
+Node: Per-Function Data516792
+Node: Storage Layout520064
+Node: Type Layout539080
+Node: Escape Sequences549439
+Node: Registers550361
+Node: Register Basics551291
+Node: Allocation Order556907
+Node: Values in Registers558334
+Node: Leaf Functions563180
+Node: Stack Registers565980
+Node: Register Classes566791
+Node: Stack and Calling587734
+Node: Frame Layout588239
+Node: Exception Handling595117
+Node: Stack Checking599635
+Node: Frame Registers603205
+Node: Elimination608670
+Node: Stack Arguments612656
+Node: Register Arguments620225
+Node: Scalar Return632108
+Node: Aggregate Return636362
+Node: Caller Saves640092
+Node: Function Entry641647
+Node: Profiling653755
+Node: Tail Calls656103
+Node: Varargs656712
+Node: Trampolines664399
+Node: Library Calls671643
+Node: Addressing Modes677174
+Node: Condition Code688460
+Node: Costs695796
+Node: Scheduling707564
+Node: Sections713098
+Node: PIC721262
+Node: Assembler Format724072
+Node: File Framework725151
+Node: Data Output730027
+Node: Uninitialized Data737928
+Node: Label Output743341
+Node: Initialization758147
+Node: Macros for Initialization764141
+Node: Instruction Output770326
+Node: Dispatch Tables779378
+Node: Exception Region Output781946
+Node: Alignment Output785315
+Node: Debugging Info789202
+Node: All Debuggers789875
+Node: DBX Options792771
+Node: DBX Hooks798159
+Node: File Names and DBX801996
+Node: SDB and DWARF803985
+Node: VMS Debug807439
+Node: Cross-compilation808000
+Node: Mode Switching814588
+Node: Target Attributes817850
+Node: Misc821722
+Node: Host Config850217
+Node: Fragments856256
+Node: Target Fragment857403
+Node: Host Fragment861875
+Node: Collect2863319
+Node: Header Dirs865879
+Node: Funding867333
+Node: GNU Project869836
+Node: Copying870487
+Node: GNU Free Documentation License889669
+Node: Contributors909549
+Node: Option Index934477
+Node: Index936955
+
+End Tag Table

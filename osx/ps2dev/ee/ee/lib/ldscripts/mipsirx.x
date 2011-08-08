@@ -3,7 +3,7 @@
  * Written by Douglas C. Knight <fsdck@uaf.edu>
  */
 OUTPUT_FORMAT("elf32-littlemips")
-SEARCH_DIR("/Users/jesper/ps2dev/ee/ee/lib");
+SEARCH_DIR("/usr/local/ps2dev/ee//ee/lib");
 ENTRY(_start)
 SECTIONS
 {
